@@ -382,11 +382,11 @@ header {
 /* ----------------------------------------*/
 
 .section-team-riders {
-  background-image: url(img/Coming\ soon.png);
+  /* background-image: url(img/Coming\ soon.png);
   background-size: auto;
   background-position: center;
   height: 36vh;
-  width: auto;
+  width: auto; */
 }
 
 .team-riders-box {
