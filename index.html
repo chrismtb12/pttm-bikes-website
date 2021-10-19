@@ -1,469 +1,543 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width-device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content=" Pedal to the Metal Bicycle Services is a local bicycle repair shop located in Edinburgh, Specializing in top of the range bicycles"
+    />
+    <meta
+      property="og:image"
+      content="https://www.pttmbikes.co.uk/resources/img/ptm-logo.jpg"
+    />
 
-        <meta charset="utf-8">
-        <meta name="viewport" content="width-device-width, initial-scale=1.0">
-        <meta name="description" content=" Pedal to the Metal Bicycle Services is a local bicycle repair shop located in Edinburgh, Specializing in top of the range bicycles">
-        <meta property="og:image" content="https://www.pttmbikes.co.uk/resources/img/ptm-logo.jpg">
+    <link rel="stylesheet" type="text/css" href="vendors/css/normalize.css" />
+    <link rel="stylesheet" type="text/css" href="vendors/css/grid.css" />
+    <link rel="stylesheet" type="text/css" href="resources/css/style.css" />
+    <link rel="stylesheet" type="text/css" href="resources/css/queries.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      defer
+      src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap"
+    ></script>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="vendors/css/ionicons.min.css"
+    />
+    <title>Pedal to the Metal Bicycle Services</title>
 
-        <link rel="stylesheet" type="text/css" href="vendors/css/normalize.css">
-        <link rel="stylesheet" type="text/css" href="vendors/css/grid.css">
-        <link rel="stylesheet" type="text/css" href="resources/css/style.css">
-        <link rel="stylesheet" type="text/css" href="resources/css/queries.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css" />
-        <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400&display=swap" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400&display=swap" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400&display=swap" rel="stylesheet">
-        <script defer src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap"> </script>
-        <link rel="stylesheet" type="text/css" href="vendors/css/ionicons.min.css">
-        <title> Pedal to the Metal Bicycle Services </title>
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="resources/favicons/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="resources/favicons/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="resources/favicons/favicon-16x16.png"
+    />
+    <link rel="manifest" href="resources/favicons/site.webmanifest" />
+    <link rel="shortcut icon" href="resources/favicons/favicon.ico" />
+    <meta name="msapplication-TileColor" content="#da532c" />
+    <meta
+      name="msapplication-config"
+      content="resources/favicons/browserconfig.xml"
+    />
+    <meta name="theme-color" content="#000000" />
+  </head>
 
-        <link rel="apple-touch-icon" sizes="180x180" href="resources/favicons/apple-touch-icon.png">
-        <link rel="icon" type="image/png" sizes="32x32" href="resources/favicons/favicon-32x32.png">
-        <link rel="icon" type="image/png" sizes="16x16" href="resources/favicons/favicon-16x16.png">
-        <link rel="manifest" href="resources/favicons/site.webmanifest">
-        <link rel="shortcut icon" href="resources/favicons/favicon.ico">
-        <meta name="msapplication-TileColor" content="#da532c">
-        <meta name="msapplication-config" content="resources/favicons/browserconfig.xml">
-        <meta name="theme-color" content="#000000">
+  <body>
+    <header>
+      <nav>
+        <div class="row">
+          <img
+            src="resources/img/ptm-logo.jpg"
+            alt="PTTM logo"
+            class="logo-black"
+          />
+          <img
+            src="resources/img/ptm-logo-white.png"
+            alt="Pedal to the metal logo"
+            class="logo"
+          />
 
-    </head>
-
-    <body>
-        <header>
-             <nav> 
-                <div class="row">
-                    <img src="resources/img/ptm-logo.jpg" alt="PTTM logo" class="logo-black">
-                    <img src="resources/img/ptm-logo-white.png" alt="Pedal to the metal logo" class="logo">
-                    
-                    <ul class="main-nav js--main-nav">
-                        <li><a href="#about"> About Us </a></li>
-                        <li><a href="#meet-the-staff"> Meet The Staff </a></li>
-                        <li><a href="#brands"> Brands </a></li>
-                        <li><a href="#services"> Services </a></li>
-                        <li><a href="#location"> Location </a></li>
-                        <li><a href="#contact-us"> Contact Us </a></li>
-                    </ul>
-                    <a class="mobile-nav-icon js--nav-icon"><i class="ion-navicon-round"></i></a>
-                </div>
-            </nav>
-
-        <div class="hero-text-box">
-            <h1>Pedal to the Metal <br> Bicycle Services</h1>
-            <a class="btn btn-about js--scroll-to-about" href="#"> About Us </a>
-            <a class="btn btn-services js--scroll-to-services" href="#"> Our Services </a>
+          <ul class="main-nav js--main-nav">
+            <li><a href="#about"> About Us </a></li>
+            <li><a href="#meet-the-staff"> Meet The Staff </a></li>
+            <li><a href="#brands"> Brands </a></li>
+            <li><a href="#services"> Services </a></li>
+            <li><a href="#location"> Location </a></li>
+            <li><a href="#contact-us"> Contact Us </a></li>
+          </ul>
+          <a class="mobile-nav-icon js--nav-icon"
+            ><i class="ion-navicon-round"></i
+          ></a>
         </div>
-        </header>
+      </nav>
 
-        <section class="section-about-us js--section-about" id='about'>
-            <div class="row js--wp-1">
-                <h2>About us</h2>
-                <p>
-                    Pedal to the Metal was started after the owner discovered that there was a gap in the market in the West Lothian areas of Winchburgh and Broxburn, located on the outskirts of Edinburgh.<br>
-                    The business was founded in 2019 and became a storefront in 2020, the business has been growing as a bicycle repair shop and stockist since then.<br><br>
+      <div class="hero-text-box">
+        <h1>
+          Pedal to the Metal <br />
+          Bicycle Services
+        </h1>
+        <a class="btn btn-about js--scroll-to-about" href="#"> About Us </a>
+        <a class="btn btn-services js--scroll-to-services" href="#">
+          Our Services
+        </a>
+      </div>
+    </header>
 
-                    We specialise in building beautiful custom bespoke mountain bikes from hardtails to enduro bikes that will always turn heads wherever you go.<br><br>
+    <section class="section-about-us js--section-about" id="about">
+      <div class="row js--wp-1">
+        <h2>About us</h2>
+        <p>
+          Pedal to the Metal was started after the owner discovered that there
+          was a gap in the market in the West Lothian areas of Winchburgh and
+          Broxburn, located on the outskirts of Edinburgh.<br />
+          The business was founded in 2019 and became a storefront in 2020, the
+          business has been growing as a bicycle repair shop and stockist since
+          then.<br /><br />
 
-                    If you do not want a bespoke custom built bike, not to worry! Pedal to the Metal deal with top industry bike brands such as, NS Bikes, Ghost Bikes, FUJI and Blank and can provide fully build bikes from these brands. Along with bike parts from, Title, SRAM, Rockshox and Profile. <br><br>
+          We specialise in building beautiful custom bespoke mountain bikes from
+          hardtails to enduro bikes that will always turn heads wherever you
+          go.<br /><br />
 
-                    Pedal to the Metal are here to provide bikes for everyone, from kids getting their very first bike, beginners just starting out to individuals who have been riding for years and are looking for top of the range products and service. <br><br>
+          If you do not want a bespoke custom built bike, not to worry! Pedal to
+          the Metal deal with top industry bike brands such as, NS Bikes, Ghost
+          Bikes, FUJI and Blank and can provide fully build bikes from these
+          brands. Along with bike parts from, Title, SRAM, Rockshox and Profile.
+          <br /><br />
 
-                    Here at Pedal to the Metal we strive to keep everyone rolling!
-                </p>
+          Pedal to the Metal are here to provide bikes for everyone, from kids
+          getting their very first bike, beginners just starting out to
+          individuals who have been riding for years and are looking for top of
+          the range products and service. <br /><br />
+
+          Here at Pedal to the Metal we strive to keep everyone rolling!
+        </p>
+      </div>
+    </section>
+
+    <section class="section-meet-staff" id="meet-the-staff">
+      <div class="row">
+        <h2>Meet the staff</h2>
+        <p class="about-text">
+          The staff here at Pedal to the Metal bikes have over 25 years of
+          mountain bike riding experience from sponsorship riding to riding for
+          the sheer enjoyment of it! From racking up the miles on a road bike,
+          riding a hardtail bike catching big air in the skatepark to trail/dh
+          bikes shredding up the forest and sending big jumps, the staff have a
+          well rounded knowledge of all types of bikes, and how to fix them!
+          <br /><br />
+          Whether it's bringing your bike in for repair or just dropping by to
+          talk all things bike, the guys at Pedal to the Metal are keen to meet
+          you!
+        </p>
+      </div>
+
+      <div class="row">
+        <div class="col span-1-of-2 js--wp-2">
+          <img
+            src="resources/img/murray.jpg"
+            class="image"
+            height="120px"
+            width="120px"
+          />
+          <h2 class="names">Murray</h2>
+          <h3 class="title">Owner / Mechanic</h3>
+          <p class="about-text">
+            Murray has worked on all kinds of bicycles over the years, and is a
+            very passionate jump bike and mtb rider. He is the shop manager and
+            owner of Pedal to the Metal. <br />
+            Murray is an avid guitar player, you never know, you may get to hear
+            him shred in the shop if you drop by on his lunch break. He rides
+            skateparks the majority of the time and loves to build bespoke
+            mountain bikes as a side hobby.<br />
+            Murray has previously been sponsored by various brands including
+            Kona UK.<br /><br />
+            Age: 31<br /><br />
+            How long have you been riding: 14 Years<br /><br />
+            Why did you get into riding bikes: Didn’t do anything else and found
+            a massive draw to being outside<br /><br />
+            How long have you been a mechanic: 5 Years<br /><br />
+            What is your bike spec: Various NS builds<br /><br />
+            Favourite riding location: Saughton Skatepark, Edinburgh<br /><br />
+            Favourite Trick: Unturndown
+          </p>
+        </div>
+        <div class="col span-1-of-2 js--wp-2">
+          <img
+            src="resources/img/shug.jpg"
+            class="image"
+            height="120px"
+            width="120px"
+          />
+          <h2 class="names">Hugh</h2>
+          <h3 class="title">Trainee Mechanic</h3>
+          <p class="about-text">
+            "Shug" loves to ride all types of bikes from jump bikes to full on
+            enduro and is keen to give anything a go. He has recently found a
+            love for learning all things bike and how to fix them. <br />
+            He is also an avid guitar player who likes to shred old school and
+            modern metal songs!<br />
+            Shug is striving to become a better bike mechanic and thinks PTTM is
+            the best place for him to do so.<br /><br /><br /><br />
+            Nickname: "Shug"<br /><br />
+            Age: 30<br /><br />
+            How long have you been riding bikes: 12 Years<br /><br />
+            Why did you get into riding bikes? Always loved being outside and
+            pushing my limits <br /><br />
+            How long have you been a trainee mechanic: 6 Months<br /><br />
+            What is your bike spec: NS, Evil, Cotic, Canyon <br /><br />
+            Favourite riding location: Anywhere! <br /><br />
+            Favourite Trick: Casing Jumps
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-brands" id="brands">
+      <div class="row">
+        <h2>Our Brands</h2>
+      </div>
+
+      <div class="row brands">
+        <div class="col span-1-of-4">
+          <img src="resources/img/title.jpg" />
+        </div>
+        <div class="col span-1-of-4">
+          <img src="resources/img/bsd.jpg" />
+        </div>
+        <div class="col span-1-of-4">
+          <img src="resources/img/odyssey.jpeg" />
+        </div>
+        <div class="col span-1-of-4">
+          <img src="resources/img/sunday.jpg" />
+        </div>
+      </div>
+
+      <div class="row brands">
+        <div class="col span-1-of-4">
+          <img src="resources/img/nsbikes.jpg" />
+        </div>
+        <div class="col span-1-of-4">
+          <img src="resources/img/ghost.jpg" />
+        </div>
+        <div class="col span-1-of-4">
+          <img src="resources/img/rockshox.jpg" />
+        </div>
+        <div class="col span-1-of-4">
+          <img src="resources/img/burgtec.jpg" />
+        </div>
+      </div>
+    </section>
+
+    <section class="section-photo-showcase">
+      <ul class="photo-showcase clearfix">
+        <li>
+          <figure class="pttm-photo">
+            <img src="resources/img/bike-shop.jpg" alt="Bike Shop Image" />
+          </figure>
+        </li>
+        <li>
+          <figure class="pttm-photo">
+            <img
+              src="resources/img/ns-bikes-dropper.jpg"
+              alt="Bike Shop Image"
+            />
+          </figure>
+        </li>
+        <li>
+          <figure class="pttm-photo">
+            <img src="resources/img/blank-bikes.jpg" alt="Blank BMX Boxes " />
+          </figure>
+        </li>
+        <li>
+          <figure class="pttm-photo">
+            <img src="resources/img/kona-repair.jpg" alt="NS Dirt Jump Bike" />
+          </figure>
+        </li>
+      </ul>
+
+      <ul class="photo-showcase clearfix">
+        <li>
+          <figure class="pttm-photo">
+            <img
+              src="resources/img/ns-fs-bike.jpg"
+              alt="NS Full Suspension Bike"
+            />
+          </figure>
+        </li>
+        <li>
+          <figure class="pttm-photo">
+            <img src="resources/img/ns-ss-bike.jpg" alt="NS Slopestyle Bike" />
+          </figure>
+        </li>
+        <li>
+          <figure class="pttm-photo">
+            <img src="resources/img/ns-parts.jpg" alt="NS Bike Parts" />
+          </figure>
+        </li>
+        <li>
+          <figure class="pttm-photo">
+            <img src="resources/img/ns-setup-bike.jpg" alt="NS Bike Gears" />
+          </figure>
+        </li>
+      </ul>
+    </section>
+
+    <section class="section-services js--section-services" id="services">
+      <div class="row">
+        <h2 class="service-heading">Services</h2>
+      </div>
+
+      <div class="row">
+        <div class="col span-1-of-3">
+          <div class="service-box">
+            <div>
+              <h3 class="service-type">Basic</h3>
+              <p class="service-price">£35.00</p>
             </div>
 
-        </section>
+            <div>
+              <ul>
+                <li>
+                  <i class="ion-wrench icon-small"></i>General Safety Check
+                </li>
+                <li>
+                  <i class="ion-wrench icon-small"></i>Wear and Tear Check
+                </li>
+                <li><i class="ion-wrench icon-small"></i>Chain Lubricated</li>
+                <li><i class="ion-wrench icon-small"></i>Tyres Pumped Up</li>
+                <li><i class="ion-wrench icon-small"></i>Brakes Adjusted</li>
+                <li>
+                  <i class="ion-wrench icon-small"></i>Replacement Parts Fitted
+                </li>
+                <li><i class="ion-wrench icon-small"></i>Gear indexing</li>
+              </ul>
+            </div>
+          </div>
+        </div>
 
-
-        <section class="section-meet-staff" id="meet-the-staff">
-            <div class="row">
-                <h2> Meet the staff </h2>
-                    <p class="about-text">
-                        The staff here at Pedal to the Metal bikes have over 25 years of mountain bike riding experience from sponsorship riding to riding for the sheer enjoyment of it! From racking up the miles on a road bike, riding a hardtail bike catching big air in the skatepark to trail/dh bikes shredding up the forest and sending big jumps, the staff have a well rounded knowledge of all types of bikes, and how to fix them!
-                    <br><br>
-                    Whether it's bringing your bike in for repair or just dropping by to talk all things bike, the guys at Pedal to the Metal are keen to meet you! 
-                </p>
+        <div class="col span-1-of-3">
+          <div class="service-box js--wp-4">
+            <div>
+              <h3 class="service-type">Standard</h3>
+              <p class="service-price">£65.00</p>
             </div>
 
-            <div class="row">
-                <div class="col span-1-of-2 js--wp-2">
-                    <img src="resources/img/murray.jpg" class="image" height="120px" width="120px">
-                    <h2 class="names"> Murray </h2>
-                    <h3 class="title">Owner / Mechanic </h3>
-                        <p class="about-text"> Murray has worked on all kinds of bicycles over the years, and is a very passionate jump bike and mtb rider.  He is the shop manager and owner of Pedal to the Metal. <br>
-                            Murray is an avid guitar player, you never know, you may get to hear him shred in the shop if you drop by on his lunch break. He rides skateparks the majority of the time and loves to build bespoke mountain bikes as a side hobby.<br> Murray has previously been sponsored by various brands including Kona UK.<br><br>
-                            Age: 31<br><br>  
-                            How long have you been riding: 14 Years<br><br> 
-                            Why did you get into riding bikes: Didn’t do anything else and found a massive draw to being outside<br><br>   
-                            How long have you been a mechanic: 5 Years<br><br>  
-                            What is your bike spec: Various NS builds<br><br> 
-                            Favourite riding location: Saughton Skatepark, Edinburgh<br><br> 
-                            Favourite Trick: Unturndown
-                        </p>
-                </div>
-            <div class="col span-1-of-2 js--wp-2">
-                <img src="resources/img/shug.jpg" class="image" height="120px" width="120px">
-                <h2 class="names"> Hugh</h2>
-                <h3 class="title">Trainee Mechanic</h3>
-                    <p class="about-text"> "Shug" loves to ride all types of bikes from jump bikes to full on enduro and is keen to give anything a go. He has recently found a love for learning all things bike and how to fix them. <br>
-                        He is also an avid guitar player who likes to shred old school and modern metal songs!<br>
-                        Shug is striving to become a better bike mechanic and thinks PTTM is the best place for him to do so.<br><br><br><br>
-                            Nickname: "Shug"<br><br>
-                            Age: 30<br><br>
-                            How long have you been riding bikes: 12 Years<br><br>
-                            Why did you get into riding bikes? Always loved being outside and pushing my limits <br><br>
-                            How long have you been a trainee mechanic: 6 Months<br><br>
-                            What is your bike spec: NS, Evil, Cotic, Canyon <br><br>
-                            Favourite riding location: Anywhere! <br><br>
-                            Favourite Trick: Casing Jumps
-                </p>
+            <div>
+              <ul>
+                <li>Basic Package &amp;</li>
+                <li><i class="ion-wrench icon-small"></i>Brake Pad Check</li>
+                <li><i class="ion-wrench icon-small"></i>Chain Wear Check</li>
+                <li><i class="ion-wrench icon-small"></i>Wheels Trued</li>
+                <li>
+                  <i class="ion-wrench icon-small"></i>Gear Cables Replaced
+                </li>
+                <li><i class="ion-wrench icon-small"></i>Full Bike Wash</li>
+                <li><i class="ion-wrench icon-small"></i>Degreased</li>
+              </ul>
             </div>
-         <div>
-        </section>
+          </div>
+        </div>
+        <div class="col span-1-of-3">
+          <div class="service-box">
+            <div>
+              <h3 class="service-type">Premium</h3>
+              <p class="service-price">£110.00</p>
+            </div>
 
+            <div>
+              <ul>
+                <li>Standard Package &amp;</li>
+                <li><i class="ion-wrench icon-small"></i>Hub Serviced</li>
+                <li><i class="ion-wrench icon-small"></i>Fork Serviced</li>
+                <li><i class="ion-wrench icon-small"></i>Headset Service</li>
+                <li>
+                  <i class="ion-wrench icon-small"></i>Bottom Bracket Service
+                </li>
+                <li>
+                  <i class="ion-wrench icon-small"></i>Tubeless Set Up If
+                  Required
+                </li>
+                <li>
+                  <i class="ion-wrench icon-small"></i>Full Stripdown and
+                  Rebuild
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-location" id="location">
+      <div class="row">
+        <h2>Our Shop</h2>
+      </div>
+
+      <div class="row">
+        <div class="col span-1-of-2">
+          <div id="wrapper-9cd199b9cc5410cd3b1ad21cab2e54d3">
+            <div id="map-9cd199b9cc5410cd3b1ad21cab2e54d3"></div>
+
+            <script>
+              (function () {
+                var setting = {
+                  height: 500,
+                  width: 1200,
+                  zoom: 17,
+                  queryString: "East Main Street, Broxburn EH52 5EQ, UK",
+                  place_id: "ChIJZy09h__ah0gRuHJgeg-malA",
+                  satellite: false,
+                  centerCoord: [55.934168673485246, -3.467538700000019],
+                  cid: "0x506aa60f7a6072b8",
+                  lang: "en",
+                  cityUrl: "/uk/dunfermline-2250",
+                  cityAnchorText:
+                    "Map of Dunfermline, Scotland, United Kingdom",
+                  id: "map-9cd199b9cc5410cd3b1ad21cab2e54d3",
+                  embed_id: "249665",
+                };
+
+                var d = document;
+                var s = d.createElement("script");
+                s.src =
+                  "https://1map.com/js/script-for-user.js?embed_id=249665";
+                s.async = true;
+                s.onload = function (e) {
+                  window.OneMap.initMap(setting);
+                };
+                var to = d.getElementsByTagName("script")[0];
+                to.parentNode.insertBefore(s, to);
+              })();
+            </script>
+            <a href="https://1map.com/map-embed">1 Map</a>
+          </div>
+        </div>
+
+        <div class="col span-1-of-2">
+          <div class="location-text">
+            <h3 class="open-times-text">We Are Open -</h3>
+            <ul>
+              <li>Tuesday: 10am - 6pm</li>
+              <li>Wednesday: 10am - 6pm</li>
+              <li>Thursday: 10am - 6pm</li>
+              <li>Friday: 10am - 6pm</li>
+              <li>Saturday: 10am - 6pm</li>
+              <li>Sunday: Closed</li>
+              <li>Monday: Closed</li>
+            </ul>
+
+            <ul>
+              <h3 class="address-text">Address -</h3>
+              <li>Pedal To The Metal Bikes</li>
+              <li>114 East Main St</li>
+              <li>Broxburn</li>
+              <li>Edinburgh</li>
+              <li>EH52 5EQ</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-contact" id="contact-us">
+      <div class="row">
+        <h2>Contact Us</h2>
+      </div>
+
+      <div class="row">
         <div>
-            <h2 style="padding-top: 90px;">PTTM Team Riders</h2>
+          <h3 class="contact-info">
+            You can contact us on the following social media platforms or by
+            email and phone!
+          </h3>
         </div>
-        <section class="section-team-riders js--section-team-riders" id="team-riders">
-             <!-- <div class="row">
-                <h2 class="team-riders-heading"> PTTM Team Riders </h2>
-            </div> 
-           
-        
 
-            <div class="row">
-                <div class="col span-1-of-3">
-                    <div class="team-riders-box">
-                        <div>
-                            <h3 class="team-riders-type"> Downhill Rider </h3>
-                            <img src="./resources/img/chris-riding.jpg" height ="200px" width= "auto" border-radius="45%" alt="Chris Riding Bikes">
-                        </div>
-
-                        <div>
-                            <ul class="team-rider-info">
-                                <li>Name: Chris</li>
-                                <li>Where are you from: Dumfries, Scotland</li>
-                                <li>How many years have you been riding: 14+ Years </li>
-                                <li>Bike Setup: Solid Strike, Rockshox Boxxer WC, Reverse Components, Schwalbe Magic Mary Tyres</li>
-                                <li>Favourite/Best Trick: Footplant</li>
-                                <li>How does it feel to be on the PTTM Team: "Great Opportunity"</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-
-
-                <div class="col span-1-of-3">
-                    <div class="team-riders-box">
-                        <div>
-                            <h3 class="team-riders-type"> Dirt Jump Rider </h3>
-                            <img src="./resources/img/chris-dj.jpg" height ="200px" width= "300px" alt="Chris Riding Bikes">
-                        </div>
-
-                        <div>
-                            <ul class="team-rider-info">
-                                <li>Name: Chris</li>
-                                <li>Where are you from: Dumfries, Scotland</li>
-                                <li>How many years have you been riding: 14+ Years </li>
-                                <li>Bike Setup: Propain Ekano, Fox Factory 36 forks, Raceface Atlass Bar and Stem, SRAM XO1 Eagle</li>
-                                <li>Favourite/Best Trick: Table</li>
-                                <li>How does it feel to be on the PTTM Team: "Great Opportunity"</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                <div class="col span-1-of-3">
-                    <div class="team-riders-box">
-                        <div>
-                            <h3 class="team-riders-type"> Skate Park Rider </h3>
-                            <img src="./resources/img/chris-skatepark.jpg" height ="200px" width= "auto" alt="Chris Riding Bikes">
-                        </div>
-
-                        <div>
-                            <ul class="team-rider-info">
-                                <li>Name: Chris</li>
-                                <li>Where are you from: Dumfries, Scotland</li>
-                                <li>How many years have you been riding: 14+ Years </li>
-                                <li>Bike Setup: Kona Shonky, Pikes, Raceface Atlas Bar/Stem/Chainring, Maxxis Tyres</li>
-                                <li>Favourite/Best Trick: Footplant</li>
-                                <li>How does it feel to be on the PTTM Team: "Great Opportunity</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div> -->
-
-            </section>
-
-        <section class="section-brands" id="brands">
-            <div class="row">
-                <h2>Our Brands</h2>
+        <div class="row">
+          <div>
+            <div class="contact-links">
+              <ul>
+                <li>
+                  <a
+                    href="https://www.facebook.com/pedaltothemetalbicycleservices/"
+                    target="_blank"
+                  >
+                    <i class="ion-social-facebook"></i> Pedal to the Metal Bikes
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="https://www.instagram.com/pttmbikes/"
+                    target="_blank"
+                  >
+                    <i class="ion-social-instagram"></i>@pttmbikes
+                  </a>
+                </li>
+                <li>
+                  <i class="ion-ios-email"></i
+                  ><a href="mailto:murray@pttmbikes.co.uk" target="_blank">
+                    murray@pttmbikes.co.uk
+                  </a>
+                </li>
+                <li><i class="ion-ios-telephone"></i> 07732 226641</li>
+              </ul>
             </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
-            <div class="row brands">
-                <div class="col span-1-of-4">
-                    <img src="resources/img/title.jpg">
-                </div>
-                <div class="col span-1-of-4">
-                    <img src="resources/img/bsd.jpg">
-                </div>
-                <div class="col span-1-of-4">
-                    <img src="resources/img/odyssey.jpeg">
-                </div>
-                <div class="col span-1-of-4">
-                    <img src="resources/img/sunday.jpg">
-                </div>
-            </div>
+    <footer>
+      <div class="row">
+        <div class="col span-1-of-2">
+          <ul class="footer-nav">
+            <li><a href="#about"> About Us </a></li>
+            <li><a href="#services"> Services </a></li>
+            <li><a href="#meet-the-staff"> Meet Us </a></li>
+          </ul>
+        </div>
+      </div>
 
-            <div class="row brands">
-                <div class="col span-1-of-4">
-                    <img src="resources/img/nsbikes.jpg">
-                </div>
-                <div class="col span-1-of-4">
-                    <img src="resources/img/ghost.jpg">
-                </div>
-                <div class="col span-1-of-4">
-                    <img src="resources/img/rockshox.jpg">
-                </div>
-                <div class="col span-1-of-4">
-                    <img src="resources/img/burgtec.jpg">
-                </div>
-            </div>
+      <div class="row">
+        <p>
+          Copyright &copy; 2021 by Pedal to the Metal Bikes. All rights
+          reserved.
+        </p>
+      </div>
+    </footer>
 
-        </section>
-
-        <section class="section-photo-showcase">
-            <ul class="photo-showcase clearfix">
-                <li>
-                    <figure class="pttm-photo">
-                        <img src="resources/img/bike-shop.jpg" alt="Bike Shop Image">
-                    </figure>
-                </li>
-                <li>
-                    <figure class="pttm-photo">
-                        <img src="resources/img/ns-bikes-dropper.jpg" alt="Bike Shop Image">
-                    </figure>
-                </li>
-                <li>
-                    <figure class="pttm-photo">
-                        <img src="resources/img/blank-bikes.jpg" alt="Blank BMX Boxes ">
-                    </figure>
-                </li>
-                <li>
-                    <figure class="pttm-photo">
-                        <img src="resources/img/kona-repair.jpg" alt="NS Dirt Jump Bike">
-                    </figure>
-                </li>
-            </ul>
-            
-            <ul class="photo-showcase clearfix">
-                <li>
-                    <figure class="pttm-photo">
-                        <img src="resources/img/ns-fs-bike.jpg" alt="NS Full Suspension Bike">
-                    </figure>
-                </li>
-                <li>
-                    <figure class="pttm-photo">
-                        <img src="resources/img/ns-ss-bike.jpg" alt="NS Slopestyle Bike">
-                    </figure>
-                </li>
-                <li>
-                    <figure class="pttm-photo">
-                        <img src="resources/img/ns-parts.jpg" alt="NS Bike Parts">
-                    </figure>
-                </li>
-                <li>
-                    <figure class="pttm-photo">
-                        <img src="resources/img/ns-setup-bike.jpg" alt="NS Bike Gears">
-                    </figure>
-                </li>
-            </ul>
-        
-        </section>
-
-        <section class="section-services js--section-services" id="services">
-            <div class="row">
-                <h2 class="service-heading"> Services </h2>
-            </div>
-
-            <div class="row">
-                <div class="col span-1-of-3">
-                    <div class="service-box">
-                        <div>
-                            <h3 class="service-type"> Basic </h3>
-                            <p class="service-price">£35.00</p>
-                        </div>
-
-                        <div>
-                            <ul>
-                                <li><i class="ion-wrench icon-small"></i>General Safety Check</li>
-                                <li><i class="ion-wrench icon-small"></i>Wear and Tear Check</li>
-                                <li><i class="ion-wrench icon-small"></i>Chain Lubricated</li>
-                                <li><i class="ion-wrench icon-small"></i>Tyres Pumped Up</li>
-                                <li><i class="ion-wrench icon-small"></i>Brakes Adjusted</li>
-                                <li><i class="ion-wrench icon-small"></i>Replacement Parts Fitted</li>
-                                <li><i class="ion-wrench icon-small"></i>Gear indexing</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-
-
-                <div class="col span-1-of-3">
-                    <div class="service-box js--wp-4">
-                        <div>
-                            <h3 class="service-type"> Standard </h3>
-                            <p class="service-price">£65.00</p>
-                        </div>
-
-                        <div>
-                            <ul>
-                                <li>Basic Package &amp;</li>
-                                <li><i class="ion-wrench icon-small"></i>Brake Pad Check</li>
-                                <li><i class="ion-wrench icon-small"></i>Chain Wear Check</li>
-                                <li><i class="ion-wrench icon-small"></i>Wheels Trued</li>
-                                <li><i class="ion-wrench icon-small"></i>Gear Cables Replaced</li>
-                                <li><i class="ion-wrench icon-small"></i>Full Bike Wash</li>
-                                <li><i class="ion-wrench icon-small"></i>Degreased</li>
-
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                <div class="col span-1-of-3">
-                    <div class="service-box">
-                        <div>
-                            <h3 class="service-type"> Premium </h3>
-                            <p class="service-price">£110.00</p>
-                        </div>
-
-                        <div>
-                            <ul>
-                                <li>Standard Package &amp; </li>
-                                <li><i class="ion-wrench icon-small"></i>Hub Serviced</li>
-                                <li><i class="ion-wrench icon-small"></i>Fork Serviced</li>
-                                <li><i class="ion-wrench icon-small"></i>Headset Service</li>
-                                <li><i class="ion-wrench icon-small"></i>Bottom Bracket Service</li>
-                                <li><i class="ion-wrench icon-small"></i>Tubeless Set Up If Required</li>
-                                <li><i class="ion-wrench icon-small"></i>Full Stripdown and Rebuild</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-
-            </section>
-
-            <section class="section-location" id="location">
-                <div class="row">
-                    <h2> Our Shop</h2>
-                </div>
-
-                <div class="row">
-                    <div class="col span-1-of-2">
-                        <div id="wrapper-9cd199b9cc5410cd3b1ad21cab2e54d3">
-                            <div id="map-9cd199b9cc5410cd3b1ad21cab2e54d3">
-                            </div>
-
-                            <script>(function () {
-
-                                    var setting = {"height":500,"width":1200,"zoom":17,"queryString":"East Main Street, Broxburn EH52 5EQ, UK","place_id":"ChIJZy09h__ah0gRuHJgeg-malA","satellite":false,
-                                    "centerCoord":[55.934168673485246,-3.467538700000019],"cid":"0x506aa60f7a6072b8","lang":"en","cityUrl":"/uk/dunfermline-2250","cityAnchorText":"Map of Dunfermline, Scotland, United Kingdom",
-                                    "id":"map-9cd199b9cc5410cd3b1ad21cab2e54d3","embed_id":"249665"};
-
-                                    var d = document;
-                                    var s = d.createElement('script');
-                                    s.src = 'https://1map.com/js/script-for-user.js?embed_id=249665';
-                                    s.async = true;
-                                    s.onload = function (e) {
-                                        window.OneMap.initMap(setting)
-                                         };
-                                    var to = d.getElementsByTagName('script')[0];
-                                    to.parentNode.insertBefore(s, to);
-                                })();</script><a href="https://1map.com/map-embed">1 Map</a>
-                        </div>
-                    </div>
-
-                    <div class="col span-1-of-2">
-                        <div class="location-text">
-                            <h3 class="open-times-text"> We Are Open - </h3>
-                            <ul>
-                                <li> Tuesday: 10am - 6pm </li>
-                                <li> Wednesday: 10am - 6pm </li>
-                                <li> Thursday: 10am - 6pm </li>
-                                <li> Friday: 10am - 6pm </li>
-                                <li> Saturday: 10am - 6pm </li>
-                                <li> Sunday: Closed </li>
-                                <li> Monday: Closed </li>
-                            </ul>
-
-                            <ul>
-                                <h3 class="address-text">Address - </h3>
-                                <li>Pedal To The Metal Bikes</li>
-                                <li>114 East Main St</li>
-                                <li>Broxburn</li>
-                                <li>Edinburgh</li>
-                                <li>EH52 5EQ</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <section class="section-contact" id="contact-us">
-                <div class="row">
-                    <h2> Contact Us </h2>
-                </div>
-
-                <div class="row">
-                    <div>
-                        <h3 class="contact-info"> You can contact us on the following social media platforms or by email and phone!</h3>
-                    </div>
-
-                    <div class="row">
-                        <div>
-                            <div class="contact-links">
-                                <ul>
-                                    <li><a href="https://www.facebook.com/pedaltothemetalbicycleservices/"> <i class="ion-social-facebook"></i> Pedal to the Metal Bikes </a></li>
-                                    <li><a href="https://www.instagram.com/pttmbikes/"> <i class="ion-social-instagram "></i>@pttmbikes </a></li>
-                                    <li><i class="ion-ios-email"></i>murray@pttmbikes.co.uk</a></li>
-                                    <li><i class="ion-ios-telephone"></i> 07732 226641 </li>
-                                </ul>
-                            </div>
-                        </div>
-
-
-                    </div>
-                </div>
-            </section>
-
-            <footer>
-                <div class="row">
-                    <div class="col span-1-of-2">
-                        <ul class="footer-nav">
-                            <li><a href="#about"> About Us </a></li>
-                            <li><a href="#services"> Services </a></li>
-                            <li><a href="#meet-the-staff"> Meet Us </a></li>
-                        </ul>
-                    </div>
-                </div>
-
-
-                    <div class="row">
-                        <p>
-                            Copyright &copy; 2021 by Pedal to the Metal Bikes. All rights reserved.
-                        </p>
-                    </div>
-            </footer>
-
-
-            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-            <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
-            <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
-            <script src="https://cdn.jsdelivr.net/npm/selectivizr@1.0.3/selectivizr.min.js"></script>
-            <script src="vendors/js/jquery.waypoints.min.js"></script>
-            <script src="resources/js/script.js"></script>
-     </body>
-
-
-
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/selectivizr@1.0.3/selectivizr.min.js"></script>
+    <script src="vendors/js/jquery.waypoints.min.js"></script>
+    <script src="resources/js/script.js"></script>
+  </body>
 </html>
